@@ -106,14 +106,16 @@
     max-width: 1140px;
 }
 
-/* Form text styling */
+/* Form text styling - brighter for dark mode */
 .form-text {
-    color: var(--bs-gray-600);
+    color: #d1d1d1 !important;  /* light gray, readable on dark */
     font-size: 0.875rem;
 }
+
 
 /* Progress percentage styling */
 #progress-percentage {
     font-weight: 600;
     font-size: 0.875rem;
 }
+
