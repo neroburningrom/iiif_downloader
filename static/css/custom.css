@@ -1,0 +1,119 @@
+/* Custom styles for IIIF Image Downloader */
+
+/* Smooth transitions for section changes */
+.card-body > div {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Enhanced progress bar styling */
+.progress {
+    background-color: var(--bs-gray-200);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 0.3s ease-in-out;
+    background: linear-gradient(45deg, var(--bs-primary), var(--bs-info));
+}
+
+/* Input focus styling */
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.25);
+    border-color: var(--bs-primary);
+}
+
+/* Button hover effects */
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card shadow enhancement */
+.card.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* Icon spacing in alerts and buttons */
+.alert i,
+.btn i {
+    margin-right: 0.5rem;
+}
+
+/* Loading animation for progress bar */
+@keyframes loading-pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.progress-bar-animated {
+    animation: loading-pulse 1.5s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Status message styling */
+#status-message {
+    border: none;
+    background: rgba(var(--bs-info-rgb), 0.1);
+    color: var(--bs-info);
+}
+
+/* Error section styling */
+#error-section .alert-danger {
+    border: none;
+    background: rgba(var(--bs-danger-rgb), 0.1);
+    color: var(--bs-danger);
+}
+
+/* Success section styling */
+#success-section .alert-success {
+    border: none;
+    background: rgba(var(--bs-success-rgb), 0.1);
+    color: var(--bs-success);
+}
+
+/* Info cards at bottom */
+.card.bg-transparent .card-body {
+    padding: 1.5rem 1rem;
+}
+
+.card.bg-transparent i {
+    color: var(--bs-primary);
+}
+
+/* Ensure proper spacing */
+.container {
+    max-width: 1140px;
+}
+
+/* Form text styling */
+.form-text {
+    color: var(--bs-gray-600);
+    font-size: 0.875rem;
+}
+
+/* Progress percentage styling */
+#progress-percentage {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
